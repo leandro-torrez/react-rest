@@ -15,12 +15,11 @@ const AddUserList = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(
-          "https://jsonplaceholder.typicode.com/users"
-        );
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await response.json();
         setUsers((prev) => ({
           ...prev,
-          data: response.data,
+          data: data,
           loading: false,
         }));
       } catch (error) {
