@@ -1,0 +1,13 @@
+.box-user{
+  width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.loading{
+  font-size: 2rem;
+  width: 200px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #d1d1d1;
+}
